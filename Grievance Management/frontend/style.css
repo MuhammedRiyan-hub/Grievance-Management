@@ -1,0 +1,132 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f8faff;
+  color: #333;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #007bff, #1e90ff);
+  color: white;
+  padding: 80px 20px;
+}
+
+.secure {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 10px auto 30px;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 12px 25px;
+  background-color: white;
+  color: #007bff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #e8f0ff;
+}
+
+.how-it-works {
+  padding: 60px 20px;
+}
+
+.how-it-works h2 {
+  margin-bottom: 30px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+}
+
+.ready {
+  padding: 50px 20px;
+  background: #eef4ff;
+}
+
+.ready button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ready button:hover {
+  background-color: #005fcc;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: left;
+}
+
+.modal-content input, 
+.modal-content textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-actions {
+  text-align: right;
+}
+
+.modal-actions button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-actions button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-actions button:last-child {
+  background-color: #ccc;
+}

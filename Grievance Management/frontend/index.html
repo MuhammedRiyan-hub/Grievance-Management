@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grievance Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <p class="secure">🔒 Secure & Confidential</p>
+    <h1>Voice Your Concerns with Confidence</h1>
+    <p class="subtitle">
+      Our grievance management system ensures your complaints are heard, tracked, and resolved efficiently.
+    </p>
+    <div class="buttons">
+      <button onclick="openForm()">Submit a Grievance</button>
+      <button onclick="viewGrievances()">View My Grievances</button>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="card">
+        <h3>Submit</h3>
+        <p>Fill out a simple form describing your grievance with relevant details.</p>
+      </div>
+      <div class="card">
+        <h3>Track</h3>
+        <p>Monitor the status of your grievance as it moves through the review process.</p>
+      </div>
+      <div class="card">
+        <h3>Resolve</h3>
+        <p>Receive updates and resolutions from our team addressing your concerns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ready Section -->
+  <section class="ready">
+    <h2>Ready to Submit Your Grievance?</h2>
+    <p>Your concerns matter to us. Start the process today with care and professionalism.</p>
+    <button onclick="openForm()">Get Started</button>
+  </section>
+
+  <!-- Popup Form -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <h2>Submit a Grievance</h2>
+      <input type="text" id="name" placeholder="Your Name" />
+      <input type="email" id="email" placeholder="Your Email" />
+      <textarea id="message" placeholder="Describe your grievance..."></textarea>
+      <div class="modal-actions">
+        <button onclick="submitGrievance()">Submit</button>
+        <button onclick="closeForm()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="grievanceList" class="modal">
+    <div class="modal-content">
+      <h2>My Grievances</h2>
+      <ul id="list"></ul>
+      <button onclick="closeList()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
